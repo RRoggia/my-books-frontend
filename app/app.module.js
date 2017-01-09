@@ -1,7 +1,7 @@
 'use strict';
 
-// Define the `myBooks` module
-angular.module('myBooks', [
+// Define the `myBooksApp` module
+angular.module('myBooksApp', [
   // ...which depends on the `myBooksList` module
   'myBooksList'
 ]);
