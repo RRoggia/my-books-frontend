@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ngApp='myBooks'>
 	<head>
 		<meta charset="utf-8">
 	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,13 +7,19 @@
 
 		<title>My Books</title>
 
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+
 		<!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 		<link rel="stylesheet" href="./css/styles.css">
+
+		<script src="app.module.js"></script>
+		<script src="my-books-list/my-books-list.module.js"></script>
+		<script src="my-books-list/my-books-list.component.js"></script>
 	</head>
 
 	<body>
-
+	<!--
 		<nav class="navbar navbar-default navbar-fixed-top">
 			<div class="container-fluid">
 				<div class="navbar-header">
@@ -31,7 +37,9 @@
 		<div class="container-fluid">
 			<label >Add Filter to My Books </label>
 			<input type="text" class="form-control col-md-4" placeholder="Search"/>
-		</div>
+		</div>-->
+
+		
 
 		
 
@@ -40,5 +48,7 @@
 	    <!-- Include all compiled plugins (below), or include individual files as needed -->
 	    <!-- Latest compiled and minified JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+		<my-books-list></my-books-list>
 	</body>
 </html>
