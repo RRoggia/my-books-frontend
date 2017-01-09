@@ -1,0 +1,14 @@
+{
+  "name": "my-books-frontend",
+  "version": "0.0.0",
+  "description": "User Interface for so to improve interaction with my book collection",
+  "repository": "https://github.com/RRoggia/my-books-frontend",
+  "license": "",
+  "devDependencies": {
+    "http-server": "^0.9.0"
+  },
+  "scripts": {
+    "prestart": "npm install",
+    "start": "http-server ./app -a localhost -p 8000 -c-1"
+  }
+}
