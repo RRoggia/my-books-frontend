@@ -8,6 +8,7 @@ Graphic User Interface to ease manage of my books
 
 ## List
 * create a layout pattern for the book displayed in the list
+* return a message when no book is found or if filter does not found anything
 
 ## My readings
 * create mock up
