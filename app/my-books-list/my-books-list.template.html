@@ -5,21 +5,19 @@
 	<div class="row">
 		<ul>
 			<li ng-repeat="book in $ctrl.myBooks | filter:$ctrl.query">
-				<div class="book">			
-					<img ng-src="{{book.thumbnail}}" alt="{{phone.title}}" />
+				<div class="book col-xs-10 col-sm-5 col-md-5 col-lg-3 row-size">			
+					<img ng-src="{{book.thumbnail}}" alt="{{phone.title}}" class="centerImage" />
 
-					<h4>Title:</h4>
-					<p>{{book.title}}</p>
+					<div class="bookInformartion">
+						<label for="title">Title:</label>
+						<p id="title">{{book.title}}</p>
 
-					<h4>Publisher:</h4>
-					<p>{{book.publisher}}</p>
+						<label>Publisher:</label>
+						<p id="publisher">{{book.publisher}}</p>
 
-					<h4>Authors:</h4>
-					<ul>
-						<li ng-repeat="author in book.authors">
-							<p>{{author}}</p>						
-						</li>
-					</ul>
+						<label>Authors:</label>
+						<p id="authors" ng-repeat="author in book.authors">{{author}}</p>
+					</div>	
 				</div>
 			</li>	
 		</ul>
