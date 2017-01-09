@@ -1,25 +1,26 @@
-<div class="container-fluid">
+<div class="container-fluid defaultMargin">
 	<h1>Filter</h1>
 	<input type="text" class="form-control" placeholder="Search" ng-model="$ctrl.query"/>
 	<h1>My Books</h1>
 	<div class="row">
 		<ul>
-			<li ng-repeat="book in $ctrl.myBooks | filter:$ctrl.query"">
-				
-				<img ng-src="{{book.thumbnail}}" alt="{{phone.title}}" />
+			<li ng-repeat="book in $ctrl.myBooks | filter:$ctrl.query">
+				<div class="book">			
+					<img ng-src="{{book.thumbnail}}" alt="{{phone.title}}" />
 
-				<h4>Title:</h4>
-				<p>{{book.title}}</p>
+					<h4>Title:</h4>
+					<p>{{book.title}}</p>
 
-				<h4>Publisher:</h4>
-				<p>{{book.publisher}}</p>
+					<h4>Publisher:</h4>
+					<p>{{book.publisher}}</p>
 
-				<h4>Authors:</h4>
-				<ul>
-					<li ng-repeat="author in book.authors">
-						<p>{{book.authors}}</p>						
-					</li>
-				</ul>
+					<h4>Authors:</h4>
+					<ul>
+						<li ng-repeat="author in book.authors">
+							<p>{{author}}</p>						
+						</li>
+					</ul>
+				</div>
 			</li>	
 		</ul>
 	</div>

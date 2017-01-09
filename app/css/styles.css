@@ -1,1 +1,19 @@
-body { padding-top: 70px; }
+body { 
+	padding-top: 70px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.book {
+	float: left;
+	margin: 3%;
+	border: 1px solid;
+	padding:25px;
+}
+
+.defaultMargin {
+	margin: 5%;
+	margin-top: 0;
+}

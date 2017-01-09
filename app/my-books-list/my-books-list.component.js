@@ -8,7 +8,7 @@ angular.
     controller: function MyBooksListController($http) {
       var self = this;
 
-      $http.get('books/myBooks.json').then(function(response) {
+      $http.get('http://localhost:3000/myBooks/books').then(function(response) {
         self.myBooks = response.data;
       });
     }
